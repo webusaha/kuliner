@@ -1,38 +1,385 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <title>Portal UMKM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
-<header class="header">
-  <div class="container">
-    <h1 id="portalName">Nama Portal</h1>
-    <p class="tagline">Pusat Akses Digital Usaha & UMKM</p>
-
-    <input
-      type="search"
-      id="searchInput"
-      placeholder="Cari halaman, produk, blog, landing page, tautan..."
-    />
-  </div>
-</header>
-
-<main class="container">
-  <section>
-    <div class="grid" id="portalGrid">
-      <!-- card dirender oleh JS -->
-    </div>
+ 
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Promo Makanan &amp; Minuman Lezat - Dapatkan Sekarang!
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    #whatsapp-float:hover {
+      background-color: #25d366 !important;
+      box-shadow: 0 0 15px #25d366;
+      transition: 0.3s;
+    }
+  </style>
+ 
+ 
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center gap-12">
+   <div class="md:w-1/2 text-center md:text-left">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+     Nikmati Lezatnya
+     <span class="text-indigo-600">
+      Makanan &amp; Minuman Spesial Kami
+     </span>
+    </h1>
+    <p class="text-lg text-gray-700 mb-8">
+     Rasakan cita rasa autentik dan segar dari produk kami. Promo terbatas, pesan sekarang dan manjakan lidah Anda dengan hidangan terbaik!
+    </p>
+    <a class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition" href="#order">
+     Order Sekarang
+    </a>
+   </div>
+   <div class="md:w-1/2">
+    <img alt="Piring berisi hidangan makanan lezat dengan berbagai jenis lauk dan sayuran segar, disajikan di atas meja kayu dengan latar belakang dapur modern" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3a7f3a3e-3a3a-4f3a-9a3a-3a7f3a3e3a7f.jpg" width="600">
+   </div>
   </section>
-</main>
+  <!-- Benefit Section -->
+  <section class="bg-white py-12 px-6 max-w-5xl mx-auto rounded-lg shadow-md mb-16">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+    Kenapa Memilih Makanan &amp; Minuman Kami?
+   </h2>
+   <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-700">
+    <li class="flex flex-col items-center text-center">
+     <i class="fas fa-leaf text-indigo-600 text-5xl mb-4">
+     </i>
+     <h3 class="font-semibold text-xl mb-2">
+      Bahan Alami &amp; Segar
+     </h3>
+     <p>
+      Kami hanya menggunakan bahan berkualitas dan segar setiap hari.
+     </p>
+    </li>
+    <li class="flex flex-col items-center text-center">
+     <i class="fas fa-utensils text-indigo-600 text-5xl mb-4">
+     </i>
+     <h3 class="font-semibold text-xl mb-2">
+      Rasa Autentik &amp; Lezat
+     </h3>
+     <p>
+      Resep tradisional dan modern yang memanjakan lidah Anda.
+     </p>
+    </li>
+    <li class="flex flex-col items-center text-center">
+     <i class="fas fa-truck text-indigo-600 text-5xl mb-4">
+     </i>
+     <h3 class="font-semibold text-xl mb-2">
+      Pengiriman Cepat &amp; Higienis
+     </h3>
+     <p>
+      Pesanan dikemas rapi dan sampai dengan kondisi terbaik.
+     </p>
+    </li>
+   </ul>
+  </section>
+  <!-- Promo Products Section -->
+  <section class="max-w-7xl mx-auto px-6 mb-16">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    Promo Produk Pilihan
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+     <img alt="Sepiring nasi goreng spesial dengan telur mata sapi, irisan mentimun, dan kerupuk di atas piring putih" class="rounded-md mb-4" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7f3a3a7f-3a7f-4a7f-9a7f-7f3a3a7f3a7f.jpg" width="300">
+     <h3 class="text-xl font-semibold mb-2">
+      Nasi Goreng Spesial
+     </h3>
+     <p class="text-indigo-600 font-bold text-lg mb-3">
+      Rp 35.000
+     </p>
+     <ul class="text-gray-700 mb-4 list-disc list-inside">
+      <li>
+       Bumbu rahasia khas Indonesia
+      </li>
+      <li>
+       Porsi besar dan mengenyangkan
+      </li>
+      <li>
+       Disajikan dengan telur dan kerupuk
+      </li>
+     </ul>
+     <a class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg w-full text-center transition" href="#order">
+      Order Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+     <img alt="Segelas es teh manis dengan es batu dan irisan lemon di gelas kaca bening, diletakkan di atas meja kayu" class="rounded-md mb-4" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4a7f3a7f-3a7f-4a7f-9a7f-4a7f3a7f3a7f.jpg" width="300">
+     <h3 class="text-xl font-semibold mb-2">
+      Es Teh Manis Segar
+     </h3>
+     <p class="text-indigo-600 font-bold text-lg mb-3">
+      Rp 10.000
+     </p>
+     <ul class="text-gray-700 mb-4 list-disc list-inside">
+      <li>
+       Teh pilihan berkualitas tinggi
+      </li>
+      <li>
+       Manis pas dan menyegarkan
+      </li>
+      <li>
+       Cocok untuk menemani makan
+      </li>
+     </ul>
+     <a class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg w-full text-center transition" href="#order">
+      Order Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+     <img alt="Sepiring ayam goreng crispy dengan sambal dan lalapan di piring putih, di atas meja kayu" class="rounded-md mb-4" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9a7f3a7f-3a7f-4a7f-9a7f-9a7f3a7f3a7f.jpg" width="300">
+     <h3 class="text-xl font-semibold mb-2">
+      Ayam Goreng Crispy
+     </h3>
+     <p class="text-indigo-600 font-bold text-lg mb-3">
+      Rp 45.000
+     </p>
+     <ul class="text-gray-700 mb-4 list-disc list-inside">
+      <li>
+       Renyah di luar, juicy di dalam
+      </li>
+      <li>
+       Sambal pedas khas rumah makan
+      </li>
+      <li>
+       Disajikan dengan lalapan segar
+      </li>
+     </ul>
+     <a class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg w-full text-center transition" href="#order">
+      Order Sekarang
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Countdown Promo Section -->
+  <section class="bg-indigo-600 text-white py-12 px-6 text-center max-w-4xl mx-auto rounded-lg shadow-lg mb-16">
+   <h2 class="text-3xl font-bold mb-4">
+    Promo Berakhir Dalam:
+   </h2>
+   <div class="flex justify-center gap-8 text-center text-4xl font-extrabold tracking-widest" id="countdown">
+    <div>
+     <span id="days">03</span>
+     <div class="text-sm font-normal mt-1">
+      Hari
+     </div>
+    </div>
+    <div>
+     <span id="hours">12</span>
+     <div class="text-sm font-normal mt-1">
+      Jam
+     </div>
+    </div>
+    <div>
+     <span id="minutes">53</span>
+     <div class="text-sm font-normal mt-1">
+      Menit
+     </div>
+    </div>
+    <div>
+     <span id="seconds">07</span>
+     <div class="text-sm font-normal mt-1">
+      Detik
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Testimoni Section -->
+  <section class="max-w-6xl mx-auto px-6 mb-16">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    Apa Kata Pelanggan Kami?
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+     <div class="flex items-center mb-4">
+      <img alt="Foto close-up seorang wanita muda tersenyum dengan latar belakang dapur rumah" class="rounded-full w-16 h-16 object-cover mr-4" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3a7f3a7f-3a7f-4a7f-9a7f-3a7f3a7f3a7f.jpg" width="64">
+      <div>
+       <p class="font-semibold text-lg">
+        Maya Putri
+       </p>
+       <p class="text-indigo-600 text-sm">
+        Pecinta Kuliner
+       </p>
+      </div>
+     </div>
+     <p class="text-gray-700 flex-grow">
+      "Nasi goreng spesialnya benar-benar enak dan porsinya pas. Pengiriman cepat dan kemasan rapi membuat saya puas berbelanja di sini."
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+     <div class="flex items-center mb-4">
+      <img alt="Foto close-up seorang pria muda dengan kacamata tersenyum di restoran" class="rounded-full w-16 h-16 object-cover mr-4" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4a7f3a7f-3a7f-4a7f-9a7f-4a7f3a7f3a7f.jpg" width="64">
+      <div>
+       <p class="font-semibold text-lg">
+        Rian Saputra
+       </p>
+       <p class="text-indigo-600 text-sm">
+        Food Blogger
+       </p>
+      </div>
+     </div>
+     <p class="text-gray-700 flex-grow">
+      "Es teh manisnya sangat menyegarkan dan pas manisnya. Cocok banget untuk menemani makan siang saya."
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+     <div class="flex items-center mb-4">
+      <img alt="Foto close-up seorang pria paruh baya tersenyum dengan latar belakang dapur" class="rounded-full w-16 h-16 object-cover mr-4" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9a7f3a7f-3a7f-4a7f-9a7f-9a7f3a7f3a7f.jpg" width="64">
+      <div>
+       <p class="font-semibold text-lg">
+        Budi Santoso
+       </p>
+       <p class="text-indigo-600 text-sm">
+        Pelanggan Setia
+       </p>
+      </div>
+     </div>
+     <p class="text-gray-700 flex-grow">
+      "Ayam goreng crispy-nya renyah dan juicy. Sambalnya pedas dan mantap. Saya pasti pesan lagi!"
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Newsletter Section -->
+  <section class="bg-white py-12 px-6 max-w-3xl mx-auto rounded-lg shadow-md mb-16">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">
+    Dapatkan Info Promo &amp; Menu Baru Langsung ke Email Anda
+   </h2>
+   <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" id="newsletter-form" novalidate="">
+    <input aria-label="Email untuk newsletter" class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email">
+    <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg transition" type="submit">
+     Berlangganan
+    </button>
+   </form>
+   <p class="mt-4 text-center text-green-600 font-semibold hidden" id="newsletter-message">
+   </p>
+  </section>
+  <!-- Order Section -->
+  <section class="max-w-4xl mx-auto px-6 mb-20" id="order">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+    Pesan Sekarang dan Nikmati Promo Spesial!
+   </h2>
+   <form class="bg-white rounded-lg shadow-md p-8 space-y-6" novalidate="">
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="name">
+      Nama Lengkap
+     </label>
+     <input aria-label="Nama lengkap" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required="" type="text">
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="phone">
+      Nomor WhatsApp
+     </label>
+     <input aria-label="Nomor WhatsApp" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="phone" name="phone" placeholder="Masukkan nomor WhatsApp Anda" required="" type="tel">
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="product">
+      Pilih Produk
+     </label>
+     <select aria-label="Pilih produk" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" id="product" name="product" required="">
+      <option disabled="" selected="" value="">
+       Pilih produk yang ingin dipesan
+      </option>
+      <option value="Nasi Goreng Spesial">
+       Nasi Goreng Spesial - Rp 35.000
+      </option>
+      <option value="Es Teh Manis Segar">
+       Es Teh Manis Segar - Rp 10.000
+      </option>
+      <option value="Ayam Goreng Crispy">
+       Ayam Goreng Crispy - Rp 45.000
+      </option>
+     </select>
+    </div>
+    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-4 rounded-lg transition" type="submit">
+     Order Sekarang
+    </button>
+   </form>
+  </section>
+  <!-- Copywriting Footer -->
+  <section class="max-w-4xl mx-auto px-6 mb-20 text-center text-gray-700">
+   <p class="text-lg">
+    Jangan lewatkan kesempatan menikmati makanan dan minuman lezat dengan harga promo terbatas. Manjakan lidah Anda dengan cita rasa terbaik dan layanan cepat. Pesan sekarang dan rasakan kenikmatannya!
+   </p>
+  </section>
+  <!-- Floating WhatsApp Button -->
+  <a aria-label="Hubungi kami via WhatsApp" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg transition" href="https://wa.me/6285818543733" id="whatsapp-float" target="_blank">
+   <i class="fab fa-whatsapp text-3xl">
+   </i>
+  </a>
+  <script>
+   // Countdown Timer Script
+    const countdown = () => {
+      const promoEndDate = new Date();
+      promoEndDate.setDate(promoEndDate.getDate() + 3);
+      promoEndDate.setHours(23, 59, 59, 999);
 
-<footer class="footer">
-  <p>© 2026 Portal UMKM</p>
-</footer>
+      const now = new Date().getTime();
+      const distance = promoEndDate.getTime() - now;
 
-<script src="script.js"></script>
-</body>
-</html>
+      if (distance < 0) {
+        document.getElementById('countdown').innerHTML = '<p class="text-2xl font-semibold">Promo telah berakhir.</p>';
+        clearInterval(timerInterval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = days.toString().padStart(2, '0');
+      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    };
+
+    const timerInterval = setInterval(countdown, 1000);
+    countdown();
+
+    // Newsletter form submission
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterMessage = document.getElementById('newsletter-message');
+
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = newsletterForm.email.value.trim();
+
+      if (!emailInput || !emailInput.includes('@')) {
+        newsletterMessage.textContent = 'Mohon masukkan email yang valid.';
+        newsletterMessage.classList.remove('hidden');
+        newsletterMessage.classList.remove('text-green-600');
+        newsletterMessage.classList.add('text-red-600');
+        return;
+      }
+
+      newsletterMessage.textContent = 'Terima kasih telah berlangganan newsletter kami!';
+      newsletterMessage.classList.remove('hidden');
+      newsletterMessage.classList.remove('text-red-600');
+      newsletterMessage.classList.add('text-green-600');
+      newsletterForm.reset();
+    });
+
+    // Order form submission (dummy)
+    const orderForm = document.querySelector('#order form');
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = orderForm.name.value.trim();
+      const phone = orderForm.phone.value.trim();
+      const product = orderForm.product.value;
+
+      if (!name || !phone || !product) {
+        alert('Mohon lengkapi semua data pemesanan.');
+        return;
+      }
+
+      alert(`Terima kasih, ${name}! Pesanan Anda untuk produk "${product}" telah kami terima. Kami akan menghubungi Anda segera melalui WhatsApp.`);
+      orderForm.reset();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+ 
